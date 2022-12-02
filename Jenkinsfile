@@ -4,7 +4,7 @@ pipeline{
         stage('1-EngEkong'){
             steps{
                 sh 'ps -ef'
-                sh 'sudo systemctl status Jenkins'
+                sh 'echo systemctl status Jenkins'
             }
         }
         stage('2-EngAnakua'){
