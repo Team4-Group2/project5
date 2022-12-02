@@ -18,10 +18,10 @@ pipeline{
                 sh 'echo this is eng bett'
             }
         }
-        stage('4-EngKeukeu'){
+        stage('4-EngEkop'){
             steps{
                 sh 'ps -ef'
-                sh 'sudo systemctl status Jenkins'
+                sh 'sudo systemctl status jenkins'
             }
 
                 
