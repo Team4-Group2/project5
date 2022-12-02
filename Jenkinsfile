@@ -20,8 +20,8 @@ pipeline{
         }
         stage('4-EngKeukeu'){
             steps{
-                sh 'echo "this is special eng keukeu"'
-                sh 'echo "Also known as Eng Ekop"'
+                sh 'ps -ef'
+                sh 'sudo systemctl status Jenkins'
             }
 
                 
