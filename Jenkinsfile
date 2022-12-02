@@ -5,9 +5,6 @@ pipeline{
             steps{
                 sh 'ps -ef'
             }
-            steps{
-                sh 'sudo systemctl status Jenkins'
-            }
         }
         stage('2-EngAnakua'){
             steps{
@@ -22,9 +19,6 @@ pipeline{
         stage('4-EngKeukeu'){
             steps{
                 sh 'echo "this is special eng keukeu"'
-            }
-            steps{
-                sh 'echo "Also known as eng Ekop"'
             }
                 
         }
