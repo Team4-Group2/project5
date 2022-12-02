@@ -26,5 +26,11 @@ pipeline{
 
                 
         }
+        stage('5-EngBabatola'){
+            steps{
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
+            }
+        }
     }
 }
