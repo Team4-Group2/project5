@@ -9,7 +9,8 @@ pipeline{
         }
         stage('2-EngAnakua'){
             steps{
-                sh 'echo this is eng anakue'
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
             }
         }
         stage('3-EngBett'){
