@@ -15,7 +15,8 @@ pipeline{
         }
         stage('3-EngBett'){
             steps{
-                sh 'echo this is eng bett'
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
             }
         }
         stage('4-EngEkop'){
@@ -23,8 +24,6 @@ pipeline{
                 sh 'ps -ef'
                 sh 'sudo systemctl status jenkins'
             }
-
-                
         }
         stage('5-EngBabatola'){
             steps{
