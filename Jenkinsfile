@@ -31,5 +31,11 @@ pipeline{
                 sh 'sudo systemctl status jenkins'
             }
         }
+        stage('6-EngUdoh'){
+            steps{
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
+            }
+        }
     }
 }
